@@ -1,0 +1,25 @@
+﻿<Window x:Class="Curs1.Style"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Curs1"
+        mc:Ignorable="d"
+        Title="Style" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <Label x:Name="lblInfo" Content="This style is boring..."
+Style="{StaticResource BasicControlStyle}" Width="150"/>
+            <Button x:Name="btnTestButton" Content="Yes, but we are reusing settings!"
+Style="{StaticResource BasicControlStyle}" Width="250"/>
+         <Button x:Name="btnAnotherButton" Content="OK!" Margin="0,10,0,0"
+Style="{StaticResource BigGreenButton}" Width="250" Cursor="Help"/>
+            <Button x:Name="btnRotatedButton" Content="OK!" Margin="0,10,0,0"
+Style="{StaticResource TiltButton}" Width="250" Cursor="Help"/>
+       
+        <Button x:Name="btnAnimatedButton" Content="OK!" Margin="0,10,0,0"
+Style="{StaticResource GrowingButtonStyle}" Width="250" Cursor="Help"/>
+           
+        </StackPanel>
+    </Grid>
+</Window>
